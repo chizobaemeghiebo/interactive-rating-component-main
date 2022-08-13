@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* color: hsl(217, 12%, 63%);
+  color: hsl(216, 12%, 54%); */
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: hsl(216, 12%, 8%);
+  color: hsl(0, 0%, 100%);
+  font-family: 'Overpass', sans-serif;
+  font-size: 15px;
+}
+
+main {
+  background: hsl(213, 19%, 18%);
+  width: 350px;
+  max-width: 90%;
+  border-radius: 1rem;
+  padding: 2rem;
+
+  position: relative;
+}
+
+main h1 {
+  font-size: 18px;
+  margin: 1rem 0;
+  font-weight: 700;
+}
+
+main p {
+  font-size: 15px;
+  margin-bottom: 1rem;
+  font-weight: 400;
+}
+
+main .ratings {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+main .ratings > div {
+  background-color: rgba(125, 136, 153, 0.2);
+  width: 15%;
+  border-radius: 50%;
+  padding: 0.7rem 0;
+  text-align: center;
+}
+
+main .ratings > div:hover {
+  background-color: hsl(25, 97%, 53%);
+  transition: background 0.3s ease-in;
+}
+
+main .img-container {
+  background: rgba(125, 136, 153, 0.2);
+  display: block;
+  padding: 0.7rem 0;
+  width: 15%;
+  border-radius: 50%;
+  text-align: center;
+}
+
+input[type='submit'] {
+  width: 100%;
+  padding: 0.7rem 0.8rem;
+  border-radius: 1.4rem;
+  border: none;
+  text-transform: uppercase;
+  text-align: center;
+  color: hsl(0, 0%, 100%);
+  background: hsl(25, 97%, 53%);
+  cursor: pointer;
+}
+
+input[type='submit']:hover {
+  background: hsl(0, 0%, 100%);
+  color: hsl(25, 97%, 53%);
+  transition: background 0.3s ease-in;
+}
+
+.attribution {
+  font-size: 11px;
+  text-align: center;
+  justify-self: flex-end;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/* thank you page */
+main .thank-you {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: hsl(213, 19%, 18%);
+  border-radius: 1rem;
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 1s ease-in;
+}
+
+main .thank-you div + p {
+  background: rgba(125, 136, 153, 0.2);
+  padding: 0.5rem 0.7rem;
+  border-radius: 20px;
+  margin-top: 1.3rem;
+  color: hsl(25, 97%, 53%);
+}
